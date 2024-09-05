@@ -7,28 +7,29 @@ body {
 }
 
 ul {
-   height: 100px;
+   height: 90px;
 }
 
 a.nav-link {
     color: black;
     width: 250px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bolder;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
     justify-content: space-around;
     margin: 0 1px;
-    border-radius: 40px;
+    border-radius: 30px;
     background-color: white;
 }
 
 a.nav-link.active {
-  box-shadow: 0 4px 8px gray (1, 1, 1, 1); 
-  transform: scale(1.4); 
-  background-color: gray;
+    box-shadow: 1 10px 15px black (0, 0, 0, 0.2); 
+    transform: scale(1.4); 
+    text-decoration: underline;
+   
 }
 
 a.nav-link:hover {
-  color: red
+    color: red
 }
