@@ -13,7 +13,8 @@ ul {
 a.nav-link {
     color: white;
     width: 250px;
-    font-size: 55px;
+    font-size: 35px;
     font-weight: bolder;
     text-align: center;
+    text-decoration: underline
 }
