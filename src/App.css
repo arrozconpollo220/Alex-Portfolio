@@ -1,0 +1,19 @@
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: shadows into Light;
+}
+
+ul {
+   height: 100px;
+}
+
+a.nav-link {
+    color: white;
+    width: 250px;
+    font-size: 55px;
+    font-weight: bolder;
+    text-align: center;
+}
