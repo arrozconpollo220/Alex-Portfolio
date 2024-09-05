@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import Experience from './pages/Experience';
 
 // Creating a new router using the createBrowserRouter function from 'react-router-dom'
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: '/Resume',
         element: <Resume />,
+      },
+      {
+        path: '/Experience',
+        element: <Experience />,
       },
     ],
   },
