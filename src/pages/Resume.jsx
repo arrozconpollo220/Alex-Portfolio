@@ -1,3 +1,6 @@
+// importing css file from the styles folder
+import '../styles/resume.css';
+
 // importing resume from the public folder
 import Resume from '../assets/AR resume.jpg';
 

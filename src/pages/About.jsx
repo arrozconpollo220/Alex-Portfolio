@@ -1,4 +1,8 @@
-import Emoji2 from '../assets/2.svg'
+// importing css file from the styles folder
+import '../styles/about.css';
+
+// importing emoji from the assets folder
+import Emoji2 from '../assets/2.svg';
 
 export default function About() {
     return (

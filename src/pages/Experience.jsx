@@ -1,3 +1,6 @@
+// importing css file from the styles folder
+import '../styles/experience.css';
+
 export default function Experience() {
     return (
       <div>

@@ -1,3 +1,7 @@
+// importing css file from the styles folder
+import '../styles/home.css';
+
+//importing photo from the assets folder
 import Emoji1 from '../assets/Portfolio Alex.svg'
 
 export default function Home() {

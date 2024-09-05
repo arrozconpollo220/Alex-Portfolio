@@ -1,3 +1,6 @@
+// importing css file from the styles folder
+import '../styles/contact.css';
+
 export default function Contact() {
     return (
       <div>

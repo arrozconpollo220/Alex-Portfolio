@@ -1,3 +1,6 @@
+// importing css file from the styles folder
+import '../styles/portfolio.css';
+
 export default function Portfolio() {
     return (
       <div>
