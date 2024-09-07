@@ -11,7 +11,9 @@ export default function Experience() {
         <p>
 This is the Experience page. add dead face project here
         </p>
-        <img src= {deadFace} alt="dead face project" />
+        <a href="https://deadxfaces.up.railway.app/">
+        <img src= {deadFace} alt="dead face project"/>
+        </a>
       </div>
     );
   }

@@ -1,6 +1,9 @@
 // importing css file from the styles folder
 import '../styles/contact.css';
 
+// importing emoji photo 3
+import emoji3 from '../assets/MyEmoji_20240906_180557_0.png';
+
 // importing useState from React
 import { useState, useEffect } from 'react';
 
@@ -92,6 +95,7 @@ function Form() {
       <div>
         <h1>Contact Me.</h1>
         <p>Feel free to reach out to me with any questions or comments. I will get back to you as soon as possible.</p>
+        <img src= {emoji3} alt="emoji of Alex" />
       </div>
       <div className="form-group">
         <label htmlFor="fullName">Name:</label>
