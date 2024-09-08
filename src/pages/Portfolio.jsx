@@ -7,23 +7,29 @@ import weatherDashboard from '../assets/Screenshot Weather Dash.png';
 import noteTaker from '../assets/screenshot notetaker.png';
 
 export default function Portfolio() {
-    return (
-      <div>
-        <h1>Portfolio</h1>
-       <p>Write a paragraph</p>
-       <figure>
+  return (
+    <div>
+      <h1>Portfolio</h1>
+      <p>Write a paragraph</p>
+      <figure>
         <figcaption>SLC Events</figcaption>
-          <img src= {slcEvent} alt="SLC Events" />   
-       </figure>
-       <figure>
+        <a href="https://arrozconpollo220.github.io/SLC-Events/">
+          <img src={slcEvent} alt="SLC Events" />
+        </a>
+      </figure>
+      <figure>
         <figcaption>Weather Dashboard</figcaption>
-          <img src= {weatherDashboard} alt="SLC Events" />   
-       </figure>
-       <figure>
+        <a href="https://arrozconpollo220.github.io/Weather-Dashboard-App/">
+          <img src={weatherDashboard} alt="SLC Events" />
+        </a>
+      </figure>
+      <figure>
         <figcaption>Note Taker</figcaption>
-          <img src= {noteTaker} alt="SLC Events" />   
-       </figure>
+        <a href="https://note-taker-site-1.onrender.com">
+          <img src={noteTaker} alt="SLC Events" />
+        </a>
+      </figure>
 
-      </div>
-    );
-  }
+    </div>
+  );
+}
