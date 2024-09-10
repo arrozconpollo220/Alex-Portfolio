@@ -1,0 +1,24 @@
+.slcEventsImg {
+height: 600px;
+width: 900px;
+}
+
+.weatherDashImg {
+    height: 600px;
+    width: 900px;
+}
+
+.noteTakerImg {
+    height: 600px;
+    width: 900px;
+}
+
+figcaption {
+    font-size: 40px;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 80px;
+    text-decoration: underline;
+}

@@ -13,13 +13,13 @@ ul {
 a.nav-link {
     color: black;
     width: 250px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
     text-align: center;
     text-decoration: none;
     justify-content: space-around;
     margin: 0 1px;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: white;
 }
 
@@ -33,3 +33,4 @@ a.nav-link.active {
 a.nav-link:hover {
     color: red
 }
+
