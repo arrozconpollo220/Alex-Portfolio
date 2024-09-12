@@ -1,24 +1,29 @@
-.slcEventsImg {
-height: 600px;
-width: 900px;
-}
-
-.weatherDashImg {
+.portPage img {
+    width: 800px;
     height: 600px;
-    width: 900px;
+    margin-left: 150px;
+    margin-right: 50px;
+    border: 05px solid greenyellow;
+    border-radius: 40px;
+    margin-bottom: 1000;
+
 }
 
-.noteTakerImg {
-    height: 600px;
-    width: 900px;
+.portPage figcaption {
+    font-size: 65px;
+    margin-left: 160px;
 }
 
-figcaption {
-    font-size: 40px;
-    justify-content: center;
+.portPage {
+    display: inline-flex;
+    margin-top: 400px;
 }
 
-h1 {
-    font-size: 80px;
+.portPage h1 {
+    font-size: 250px;
+    padding-top: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: greenyellow;
     text-decoration: underline;
 }

@@ -88,15 +88,19 @@ function Form() {
     setEmail('');
     setFullName('');
     setMessage('');
+
+    // clears data from formData
+    localStorage.removeItem('formData');
   };
 
   return (
     <form onSubmit={handleFormSubmit} className="contact-form">
-      <div>
+      <div className='contact'>
         <h1>Contact Me.</h1>
         <p>Feel free to reach out to me with any questions or comments. I will get back to you as soon as possible.</p>
         <img src= {emoji3} alt="emoji of Alex" />
       </div>
+      <container className='forms'>
       <div className="form-group">
         <label htmlFor="fullName">Name:</label>
         <input
@@ -110,6 +114,7 @@ function Form() {
         />
         {errors.fullName && <span className="error">{errors.fullName}</span>}
       </div>
+      
       <div className="form-group">
         <label htmlFor="email">Email:</label>
         <input
@@ -136,6 +141,7 @@ function Form() {
         {errors.message && <span className="error">{errors.message}</span>}
       </div>
       <button type="submit">Submit</button>
+      </container>
     </form>
   );
 }

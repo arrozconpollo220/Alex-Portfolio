@@ -11,7 +11,6 @@ export default function Portfolio() {
   return (
     <div className='portPage'>
       <h1>Portfolio.</h1>
-      <p>Write a paragraph</p>
       <container className='portPage'>
       <figure>
         <figcaption>SLC Events</figcaption>

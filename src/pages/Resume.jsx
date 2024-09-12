@@ -6,9 +6,9 @@ import ResumePage from '../assets/AR resume.jpg';
 
 export default function Resume() {
     return (
-      <div>
+      <div className='resume'>
         <h1>Resume.</h1>
-      <h2>Take a look at my resume and feel free to download for your records</h2>
+      <h2>Take a look at my resume and feel free to download for your records.</h2>
       <img src={ResumePage} alt="Resume" />
       </div>
     );

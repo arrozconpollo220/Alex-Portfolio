@@ -15,7 +15,7 @@ function App() {
         <Outlet />
         <footer>
         
-
+        This is a footer
         </footer>
       </main>
     </>

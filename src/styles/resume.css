@@ -1,0 +1,32 @@
+.resume {
+    margin-left: 250px;
+    margin-top: 300px;
+    display: inline-flex;
+    margin-top: 400px;
+}
+
+.resume img {
+    width: 1500px;
+    height: 1500px;
+    margin-right: 350px;
+    margin-left: 150px;
+    border: 05px solid greenyellow;
+    border-radius: 40px;
+}
+
+.resume h1 {
+    font-size: 250px;
+    padding-top: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.resume h2 {
+    font-size: 75px;
+    padding-top: 425px;
+    padding-left: 100px;
+    padding-right: 60px;
+    text-align: center; 
+}
