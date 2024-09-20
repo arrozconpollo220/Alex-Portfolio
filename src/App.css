@@ -34,3 +34,15 @@ a.nav-link:hover {
     color: yellowgreen
 }
 
+.footer {
+    font-size: 110px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.footer a {
+    color: yellowgreen;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}

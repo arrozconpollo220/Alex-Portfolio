@@ -1,13 +1,12 @@
 .resume {
     margin-left: 250px;
-    margin-top: 300px;
+    margin-top: 200px;
     display: inline-flex;
-    margin-top: 400px;
 }
 
 .resume img {
-    width: 1500px;
-    height: 1500px;
+    width: 1200px;
+    height: 1300px;
     margin-right: 350px;
     margin-left: 150px;
     border: 05px solid greenyellow;
@@ -15,7 +14,7 @@
 }
 
 .resume h1 {
-    font-size: 250px;
+    font-size: 200px;
     padding-top: 350px;
     padding-left: 10px;
     padding-right: 10px;

@@ -9,7 +9,7 @@ export default function Experience() {
       <div className='exp'>
         <h1>Experience.</h1>
         <p>
-        Dead Faces clothing line was created to get the client off of Shopify. 
+        Dead Faces clothing line is a e-commerce website that was completely redesigned for the client. 
         </p>
         <a href="https://deadxfaces.up.railway.app/">
         <img src= {deadFace} alt="dead face project"/>

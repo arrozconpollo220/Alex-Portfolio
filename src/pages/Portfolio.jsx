@@ -11,7 +11,7 @@ export default function Portfolio() {
   return (
     <div className='portPage'>
       <h1>Portfolio.</h1>
-      <container className='portPage'>
+      <container className='portPage2'>
       <figure>
         <figcaption>SLC Events</figcaption>
         <a href="https://arrozconpollo220.github.io/SLC-Events/">

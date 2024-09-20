@@ -2,6 +2,12 @@
 import { Outlet } from 'react-router-dom';
 import Nav from './components/NavTabs';
 import './App.css';
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiOutlineX } from "react-icons/ai";
+import { SiGmail } from "react-icons/si";
+
 
 
 
@@ -13,9 +19,16 @@ function App() {
       <Nav />
       <main className="mx-3">
         <Outlet />
-        <footer>
-        
-        This is a footer
+        <footer className='footer'>
+          <a href='https://www.linkedin.com/in/alexander-rodriguez-8a539117b/' ><AiFillLinkedin /></a>
+          <a href='https://github.com/arrozconpollo220'>
+            <AiFillGithub /></a>
+          <a href='https://www.instagram.com/arrozconpollo220/'>
+            <AiFillInstagram /></a>
+          <a href='https://x.com/AlexRodri007'>
+          <AiOutlineX /></a>
+          <a href='mailto: alexander.rodriguez2121@gmail.com'>
+          <SiGmail /></a>
         </footer>
       </main>
     </>
