@@ -14,6 +14,10 @@
     border-radius: 40px;
 }
 
+.exp img:hover {
+    transform: scale(1.1);
+}
+
 .exp h1 {
     font-size: 200px;
     padding-top: 250px;
