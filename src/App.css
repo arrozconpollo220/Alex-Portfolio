@@ -2,7 +2,8 @@
 body {
     background-color: black;
     color: white;
-    font-family: shadows into light;
+    font-family: 'caveat', cursive;
+    font-weight: bolder;
 }
 
 ul {
