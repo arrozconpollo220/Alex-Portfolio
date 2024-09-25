@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    open: true,
+    open: process.env.NODE_ENV === 'development', // Open only in development
   },
 });
 
