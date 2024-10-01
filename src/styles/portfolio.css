@@ -1,7 +1,7 @@
 .portPage img {
     width: 800px;
     height: 600px;
-    margin-left: 300px;
+    margin-left: 50px;
     margin-right: 50px;
     border: 05px solid greenyellow;
     border-radius: 40px;
@@ -14,7 +14,7 @@
 
 .portPage figcaption {
     font-size: 65px;
-    margin-left: 200px;
+    margin-left: 50px;
     text-align: center;
     color: yellowgreen
  
@@ -23,7 +23,7 @@
 .portPage2 {
     display: inline-flex;
     margin-top: 225px;
-    margin-bottom: 200px;
+    margin-bottom: 200px;   
 }
 
 .portPage h1 {

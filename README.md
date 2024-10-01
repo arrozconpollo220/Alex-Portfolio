@@ -44,7 +44,7 @@
   This site was tested several times during it's creation and after it was deployed. 
 
   ## Site-URL
-  alex-portfolio-production-5b74.up.railway.app
+  https://alexander.up.railway.app/
 
   ## Screenshots
   

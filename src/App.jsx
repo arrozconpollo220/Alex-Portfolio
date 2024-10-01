@@ -20,14 +20,14 @@ function App() {
       <main className="mx-3">
         <Outlet />
         <footer className='footer'>
-          <a href='https://www.linkedin.com/in/alexander-rodriguez-8a539117b/' ><AiFillLinkedin /></a>
-          <a href='https://github.com/arrozconpollo220'>
+          <a href='https://www.linkedin.com/in/alexander-rodriguez-8a539117b/' target="_blank" ><AiFillLinkedin /></a>
+          <a href='https://github.com/arrozconpollo220' target="_blank" >
             <AiFillGithub /></a>
-          <a href='https://www.instagram.com/arrozconpollo220/'>
+          <a href='https://www.instagram.com/arrozconpollo220/' target="_blank" >
             <AiFillInstagram /></a>
-          <a href='https://x.com/AlexRodri007'>
+          <a href='https://x.com/AlexRodri007' target="_blank" >
           <AiOutlineX /></a>
-          <a href='mailto: alexander.rodriguez2121@gmail.com'>
+          <a href='mailto: alexander.rodriguez2121@gmail.com' target="_blank" >
           <SiGmail /></a>
         </footer>
       </main>

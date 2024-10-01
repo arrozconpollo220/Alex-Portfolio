@@ -11,7 +11,7 @@ export default function Experience() {
         <p>
         Dead Faces clothing line is a e-commerce website that was completely redesigned for the client. 
         </p>
-        <a href="https://deadxfaces.up.railway.app/">
+        <a href="https://deadxfaces.up.railway.app/" target="_blank" >
         <img src= {deadFace} alt="dead face project"/>
         </a>
       </div>
