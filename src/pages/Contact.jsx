@@ -111,6 +111,7 @@ function Form() {
           onChange={handleInputChange}
           onBlur={handleBlur}
           required
+          placeholder='Name'
         />
         {errors.fullName && <span className="error">{errors.fullName}</span>}
       </div>
@@ -125,6 +126,7 @@ function Form() {
           onChange={handleInputChange}
           onBlur={handleBlur}
           required
+          placeholder='Email'
         />
         {errors.email && <span className="error">{errors.email}</span>}
       </div>
@@ -137,6 +139,7 @@ function Form() {
           onChange={handleInputChange}
           onBlur={handleBlur}
           required
+          placeholder='Message'
         ></textarea>
         {errors.message && <span className="error">{errors.message}</span>}
       </div>
