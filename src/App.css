@@ -46,3 +46,37 @@ a.nav-link:hover {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+/* todo make it so the it's scalable to a phone size */
+
+@media screen and (max-width: 950px) {
+    a.nav-link {
+        font-size: 10px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        margin: 0 1px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .footer {
+        font-size: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        margin: 0 1px;
+        position: absolute;
+        bottom: 0;
+        right: 190px;
+    }
+}
+
+
+
+
+
+
+
+
+
