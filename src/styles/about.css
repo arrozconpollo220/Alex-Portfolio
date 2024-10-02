@@ -38,3 +38,49 @@
     padding-right: 40px;
     color: greenyellow;
 }
+
+@media screen and (max-width: 950px) {
+    .about {
+        margin-left: 0px;
+        display: inline-flex;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .about img {
+        width: 200px;
+        height: 200px;
+        margin-right: 180px;
+        margin-left: 50px;
+        border: 05px solid greenyellow;
+        border-radius: 40px;
+        position:absolute;
+        top: 550px;
+        left: 50px;       
+    }
+
+    .about h1 {
+        font-size: 35px;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .about h2 {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .about p {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        top: 300px;
+        text-align: center;
+    }
+    
+}
