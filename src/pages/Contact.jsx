@@ -1,16 +1,20 @@
+
 // importing css file from the styles folder
 import '../styles/contact.css';
 
-// importing emoji photo 3
+// importing emoji photo
 import emoji3 from '../assets/MyEmoji_20240906_180557_0.png';
 
-// importing useState from React
-import { useState, useEffect } from 'react';
+// importing useState, useRef from React
+import { useState, useRef } from 'react';
 
 // importing helper function for email validation from utils folder
 import { validateEmail } from '../utils/helpers';
 
-function Form() {
+// importing emailjs for email service
+import emailjs from '@emailjs/browser';
+
+function ContactUs() {
   // State variables for form fields
   const [email, setEmail] = useState('');
   const [fullName, setFullName] = useState('');
@@ -23,25 +27,17 @@ function Form() {
     message: ''
   });
 
-  useEffect(() => {
-    const savedData = localStorage.getItem('formData');
-    if (savedData) {
-      const { email, fullName, message } = JSON.parse(savedData);
-      setEmail(email || '');
-      setFullName(fullName || '');
-      setMessage(message || '');
-    }
-  }, []);
+  // Ref for the form element (used for emailjs)
+  const form = useRef();
 
   // Handle input change
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
-    // Update state based on input field
     if (name === 'email') {
-      setEmail(value);
+      setEmail(value); // Make sure state updates
     } else if (name === 'fullName') {
-      setFullName(value);
+      setFullName(value); // Make sure state updates
     } else if (name === 'message') {
       setMessage(value);
     }
@@ -51,7 +47,6 @@ function Form() {
   const handleBlur = (e) => {
     const { name, value } = e.target;
 
-    // Check if the field is empty and set error message
     if (!value.trim()) {
       setErrors(prevErrors => ({ ...prevErrors, [name]: 'This field is required' }));
     } else {
@@ -77,76 +72,84 @@ function Form() {
       return;
     }
 
-    // Save data to localStorage
-    const formData = { email, fullName, message };
-    localStorage.setItem('formData', JSON.stringify(formData));
+    // Send the email using emailjs
+    emailjs
+      .sendForm('service_wpho2gf', 'template_xrga1vs', form.current, 'ZB4difRsgRgAQKiWH')
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert('Failed to send message. Please try again.');
+        }
+      );
 
-    // Proceed with form submission (e.g., sending data to a server or displaying a confirmation)
-    alert(`Hello ${fullName}. Your email is ${email}. Your message is ${message}`);
-
-    // Clear form fields
+    // Clear form fields after submission
     setEmail('');
     setFullName('');
     setMessage('');
-
-    // clears data from formData
-    localStorage.removeItem('formData');
   };
 
   return (
-    <form onSubmit={handleFormSubmit} className="contact-form">
+    <form ref={form} onSubmit={handleFormSubmit} className="contact-form">
       <div className='contact'>
         <h1>Contact Me.</h1>
         <p>Feel free to reach out to me with any questions or comments. I will get back to you as soon as possible.</p>
-        <img src= {emoji3} alt="emoji of Alex" />
+        <img src={emoji3} alt="emoji of Alex" />
       </div>
       <container className='forms'>
-      <div className="form-group">
-        <label htmlFor="fullName">Name:</label>
-        <input
-          type="text"
-          id="fullName"
-          name="fullName"
-          value={fullName}
-          onChange={handleInputChange}
-          onBlur={handleBlur}
-          required
-          placeholder='Name'
-        />
-        {errors.fullName && <span className="error">{errors.fullName}</span>}
-      </div>
-      
-      <div className="form-group">
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={email}
-          onChange={handleInputChange}
-          onBlur={handleBlur}
-          required
-          placeholder='Email'
-        />
-        {errors.email && <span className="error">{errors.email}</span>}
-      </div>
-      <div className="form-group">
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={message}
-          onChange={handleInputChange}
-          onBlur={handleBlur}
-          required
-          placeholder='Message'
-        ></textarea>
-        {errors.message && <span className="error">{errors.message}</span>}
-      </div>
-      <button type="submit">Submit</button>
+        <div className="form-group">
+          <label htmlFor="fullName">Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            value={fullName}
+            onChange={handleInputChange} // Ensure state is updated on input
+            onBlur={handleBlur}
+            required
+            placeholder='Name'
+          />
+          {errors.fullName && <span className="error">{errors.fullName}</span>}
+        </div>
+        
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={handleInputChange} // Ensure state is updated on input
+            onBlur={handleBlur}
+            required
+            placeholder='Email'
+          />
+          {errors.email && <span className="error">{errors.email}</span>}
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            value={message}
+            onChange={handleInputChange} // Ensure state is updated on input
+            onBlur={handleBlur}
+            required
+            placeholder='Message'
+          ></textarea>
+          {errors.message && <span className="error">{errors.message}</span>}
+        </div>
+
+        <button type="submit">Submit</button>
       </container>
     </form>
   );
 }
 
-export default Form;
+export default ContactUs;
+
+

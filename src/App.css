@@ -2,7 +2,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: 'caveat', cursive;
+    font-family: 'shadows into light', cursive;
     font-weight: bolder;
 }
 
@@ -24,11 +24,12 @@ a.nav-link {
 }
 
 a.nav-link.active {
-    box-shadow: 1 10px 15px black (0, 0, 0, 0.2); 
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
     transform: scale(1.4); 
     text-decoration: underline;
-   
+    background-color: yellowgreen !important;
 }
+
 
 a.nav-link:hover {
     color: yellowgreen
